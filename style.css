@@ -1,0 +1,29 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.name-highlight{
+  color:orange;
+}
+.header{
+  width: 40%;
+  float: left ;
+  margin-left: 5%;
+  padding-left: 2%;
+  padding-right:15%;
+  
+}
+.header2 {
+  width: 100%;
+}
+
+
