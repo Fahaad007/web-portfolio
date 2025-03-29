@@ -1,29 +1,116 @@
-body{
+body {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-style: normal;
+  margin: 0;
 }
 
-
+/* Bold Poppins Font */
 .poppins-bold {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-style: normal;
 }
 
-.name-highlight{
-  color:orange;
+/* Highlighted Name */
+.name-highlight {
+  color: orange;
 }
-.header{
+
+/* Header Section */
+.header {
   width: 40%;
-  float: left ;
+  float: left;
   margin-left: 5%;
   padding-left: 2%;
-  padding-right:15%;
+  padding-right: 15%;
+}
+
+/* Full-width header container */
+.header2 {
+  width: 35%;
+  padding-top: 5%;
+}
+
+/* Background for Header */
+.header-container {
+  background-image: url("images/top-banner.PNG");
+  background-repeat: no-repeat;
   
 }
-.header2 {
-  width: 100%;
+
+/* Section Styling */
+section {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 50px 5%;
 }
+
+/* Link Button */
+.link-button {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom right, orange, yellow);
+  background-color: orange;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: black;
+  font-weight: 700;
+  display: inline-block;
+  transition: 0.3s ease-in-out;
+}
+
+.link-button:hover {
+  background-image: linear-gradient(to bottom right, yellow, orange);
+}
+
+
+.academic {
+  display: flex;
+  align-items: center;  /* Align items vertically */
+  justify-content: space-between;  /* Spread content evenly */
+  gap: 20px;  /* Add spacing between text and image */
+  padding: 50px 5%;
+}
+
+.half-width, .half-width2 {
+  width: 35%; /* Set equal width for image and text sections */
+}
+
+.half-width img { 
+  width: 100%; /* Ensure the image is fully responsive */
+  height: auto;
+  display: block; /* Remove unwanted spacing */
+}
+
+@media (max-width: 768px) {
+  .academic {
+      flex-direction: column; /* Stack on small screens */
+      text-align: center;
+  }
+  .half-width, .half-width2 {
+      width: 100%; /* Full width on small screens */
+  }
+}
+.download-button {
+  text-decoration: none;
+  background-image: linear-gradient(to bottom right, #ff9800, #ff5722);
+  padding: 12px 25px;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+}
+
+.download-button:hover {
+  background-image: linear-gradient(to bottom right, #ff5722, #ff9800);
+  transform: scale(1.05);
+}
+
+
+
+
 
 
